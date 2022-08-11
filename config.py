@@ -24,4 +24,4 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://BGMIxCHATS")
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", " https://t.me/KSKxCHEATS")
 
 STRING_SESSION = getenv("STRING_SESSION", None)
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1356469075").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
