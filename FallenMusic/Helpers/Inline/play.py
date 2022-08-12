@@ -3,7 +3,12 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
 from FallenMusic import db_mem
-
+def primary_markup(videoid, user_id):
+    if videoid not in db_mem:
+        db_mem[videoid] = {}
+    db_mem[videoid]["check"] = 2
+    
+    
 selections = [
 "█▒▒▒▒▒▒▒▒▒▒▒",
 "██▒▒▒▒▒▒▒▒▒▒",
