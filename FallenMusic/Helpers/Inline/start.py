@@ -30,7 +30,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/FallenMusic"
+                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://te.legra.ph/file/21fff815368bc57386c27.jpg"
                 )
             ],
         ]
@@ -62,7 +62,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/FallenMusic"
+                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://te.legra.ph/file/21fff815368bc57386c27.jpg"
                 ),
             ],
         ]
