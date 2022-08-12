@@ -168,15 +168,15 @@ async def start_command(_, message):
 📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ :** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
 🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋ :** [ᴠɪsɪᴛ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
 
- sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} 🥀"""
+    sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} """
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="☁ ʏᴏᴜᴛᴜʙᴇ ☁", url=f"{link}"
+                            text="ʏᴏᴜᴛᴜʙᴇ", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=config.SUPPORT_CHAT
+                            text="sᴜᴩᴩᴏʀᴛ", url=config.SUPPORT_CHAT
                         ),
                     ],
                 ]
@@ -196,28 +196,30 @@ async def start_command(_, message):
         [
             [
                 InlineKeyboardButton(
-                    text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    text="🔎ʜᴏᴡ ᴛᴏ ᴜꜱᴇ? ᴄᴏᴍᴍᴀɴᴅꜱ ᴍᴇɴᴜ.", callback_data="fallen_help"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="❄ ʜᴇʟᴩ ❄", callback_data="fallen_help"
+                    text="✚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                 ),
+            ],
+            [
                 InlineKeyboardButton(
-                    text="🥀 ᴏᴡɴᴇʀ 🥀", user_id=F_OWNER
+                    text="👤 ʙᴏᴛ ᴏᴡɴᴇʀ", user_id=F_OWNER
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT
+                    text="📨 ꜱᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
                 ),
                 InlineKeyboardButton(
-                    text="💘 ᴄʜᴀɴɴᴇʟ 💘", url=config.SUPPORT_CHANNEL
+                    text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://te.legra.ph/file/21fff815368bc57386c27.jpg"
+                    text="💡 ɢɪᴛ ʀᴇᴘᴏ", url="https://te.legra.ph/file/21fff815368bc57386c27.jpg"
                 )
             ],
         ]
@@ -227,35 +229,37 @@ async def start_command(_, message):
 
 @app.on_callback_query(filters.regex("fallen_home"))
 async def fallen_home(_, CallbackQuery):
-    await CallbackQuery.answer("ғᴀʟʟᴇɴ ʜᴏᴍᴇ")
+    await CallbackQuery.answer("ʜɴʏ ʜᴏᴍᴇ")
     await CallbackQuery.message.edit_text(
         text=home_text_pm,
         reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    text="🔎ʜᴏᴡ ᴛᴏ ᴜꜱᴇ? ᴄᴏᴍᴍᴀɴᴅꜱ ᴍᴇɴᴜ.", callback_data="fallen_help"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="❄ ʜᴇʟᴩ ❄", callback_data="fallen_help"
+                    text="✚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                 ),
+            ],
+            [
                 InlineKeyboardButton(
-                    text="🥀 ᴏᴡɴᴇʀ 🥀", user_id=F_OWNER
+                    text="👤 ʙᴏᴛ ᴏᴡɴᴇʀ", user_id=F_OWNER
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT
+                    text="📨 ꜱᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
                 ),
                 InlineKeyboardButton(
-                    text="💘 ᴄʜᴀɴɴᴇʟ 💘", url=config.SUPPORT_CHANNEL
+                    text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://te.legra.ph/file/21fff815368bc57386c27.jpg"
+                    text="💡 ɢɪᴛ ʀᴇᴘᴏ", url="https://te.legra.ph/file/21fff815368bc57386c27.jpg"
                 )
             ],
         ]
