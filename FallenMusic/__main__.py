@@ -97,7 +97,7 @@ async def fallen_boot():
     try:
         await Ass.send_message(
             config.LOGGER_ID,
-            f"<b>➻ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ 🔮\n\n❄ ɪᴅ :</b> `{ASSID}`\n✨ <b>ɴᴀᴍᴇ :</b> {ASSNAME}\n☁ <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{ASSUSERNAME}",
+            f"<b>➻ KSK ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ 🔮\n\n❄ ɪᴅ :</b> `{ASSID}`\n✨ <b>ɴᴀᴍᴇ :</b> {ASSNAME}\n☁ <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{ASSUSERNAME}",
         )
     except Exception as e:
         print(
@@ -106,8 +106,8 @@ async def fallen_boot():
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await Ass.join_chat("DevilsHeavenMF")
-        await Ass.join_chat("FallenXBots")
+        await Ass.join_chat("BGMIxCHATS")
+        await Ass.join_chat("KSKxCHEATS")
     except:
         pass
     console.print(f"\n┌[red] Bot Started as {BOT_NAME}!")
@@ -217,7 +217,7 @@ async def start_command(_, message):
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/Fallen-Music"
+                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/Rahulsharma45/KSK-Music"
                 )
             ],
         ]
@@ -255,7 +255,7 @@ async def fallen_home(_, CallbackQuery):
             ],
             [
                 InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/AnonymousR1025/Fallen-Music"
+                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/Rahulsharma45/KSK-Music"
                 )
             ],
         ]
