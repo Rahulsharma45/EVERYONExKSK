@@ -2,6 +2,16 @@ from youtubesearchpython import VideosSearch
 
 from FallenMusic.Helpers.Changers import time_to_seconds
 
+import asyncio
+import os
+import re
+from typing import Union
+
+import aiohttp
+import yt_dlp
+from pyrogram.types import Message
+from youtubesearchpython.__future__ import VideosSearch
+
 async def shell_cmd(cmd):
     proc = await asyncio.create_subprocess_shell(
         cmd,
