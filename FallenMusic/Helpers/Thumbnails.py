@@ -120,8 +120,8 @@ async def thumb_init(videoid):
             font4 = ImageFont.truetype('FallenMusic/Utilities/font.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((20, 20), "KSK MUSIC", fill="Red", font = font1, align ="left") 
-            image4.text((670, 250), "KSK PLAYER", fill="white", font = font2, stroke_width=4, stroke_fill="white", align ="left") 
+            image4.text((40, 40), "KSK MUSIC", fill="green", font = font1, align ="left") 
+            image4.text((650, 150), "KSK PLAYER", fill="white", font = font2, stroke_width=4, stroke_fill="white", align ="left") 
 
             # title
             title1 = truncate(title)
