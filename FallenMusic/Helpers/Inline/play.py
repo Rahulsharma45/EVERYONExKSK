@@ -2,7 +2,7 @@ import config
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from FallenMusic import db_mem
+from HnYMusic import db_mem
 
 
 def primary_markup(videoid, user_id):
@@ -11,16 +11,16 @@ def primary_markup(videoid, user_id):
     db_mem[videoid]["check"] = 2
     buttons = [
         [
-            InlineKeyboardButton(text="▶️ Resume", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="⏸ Pause", callback_data=f"pausecb"),
-            InlineKeyboardButton(text="⏯ Skip", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="⏹ Stop", callback_data=f"stopcb"),
+            InlineKeyboardButton(text="▶️ʀᴇꜱᴜᴍᴇ", callback_data=f"resumecb"),
+            InlineKeyboardButton(text="⏸ᴘᴀᴜꜱᴇ", callback_data=f"pausecb"),
         ],
         [
-            InlineKeyboardButton(
-                text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT
-            ),
-            InlineKeyboardButton(text="↻ ᴄʟᴏsᴇ ↺", callback_data=f"close"),
+            InlineKeyboardButton(text="⏭ꜱᴋɪᴘ", callback_data=f"skipcb"),
+            InlineKeyboardButton(text="⏹ᴇɴᴅ", callback_data=f"stopcb"),
+        ],
+        [
+            
+            InlineKeyboardButton(text="🗑ᴄʟᴏsᴇ", callback_data=f"close"),
         ],
     ]
     return buttons
@@ -28,19 +28,21 @@ def primary_markup(videoid, user_id):
 
 audio_markup = InlineKeyboardMarkup(
     [
-        [
-            InlineKeyboardButton(text="▶️ Resume", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="⏸ Pause", callback_data=f"pausecb"),
-            InlineKeyboardButton(text="⏯ Skip", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="⏹ Stop", callback_data=f"stopcb"),
+       [
+            InlineKeyboardButton(text="▶️ʀᴇꜱᴜᴍᴇ", callback_data=f"resumecb"),
+            InlineKeyboardButton(text="⏸ᴘᴀᴜꜱᴇ", callback_data=f"pausecb"),
         ],
-        [InlineKeyboardButton("↻ ᴄʟᴏsᴇ ↺", callback_data="close")],
+        [
+            InlineKeyboardButton(text="⏭ꜱᴋɪᴘ", callback_data=f"skipcb"),
+            InlineKeyboardButton(text="⏹ᴇɴᴅ", callback_data=f"stopcb"),
+        ],
+        [InlineKeyboardButton("🗑ᴄʟᴏsᴇ", callback_data="close")],
     ]
 )
 
 
 close_key = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton("✯ ᴄʟᴏsᴇ ✯", callback_data="close")],
+        [InlineKeyboardButton("🗑ᴄʟᴏsᴇ", callback_data="close")],
     ]
 )
