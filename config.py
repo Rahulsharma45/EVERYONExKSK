@@ -13,7 +13,7 @@ ASS_HANDLER = list(getenv("ASS_HANDLER", ".").split())
 BOT_TOKEN = getenv("5365851389:AAGihr5BvNTrbjejG9GEhUz-rfccIP7Ik6k")
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "140"))
-LOGGER_ID = int(getenv("-1001644049633"))
+LOGGER_ID = int(getenv(""))
 MONGO_DB_URI = getenv("mongodb+srv://kskop:kakujai253@cluster0.ew9p1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "2102097596").split()))
 
